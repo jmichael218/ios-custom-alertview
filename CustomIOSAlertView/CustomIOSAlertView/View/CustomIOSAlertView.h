@@ -26,6 +26,7 @@
 @property (nonatomic, assign) id<CustomIOSAlertViewDelegate> delegate;
 @property (nonatomic, retain) NSArray *buttonTitles;
 @property (nonatomic, assign) BOOL useMotionEffects;
+@property (nonatomic, assign) BOOL DisableContainerBG;
 
 @property (copy) void (^onButtonTouchUpInside)(CustomIOSAlertView *alertView, int buttonIndex) ;
 

@@ -40,6 +40,9 @@
 {
     // Here we need to pass a full frame
     CustomIOSAlertView *alertView = [[CustomIOSAlertView alloc] init];
+    
+    // Disable Container BG
+    //alertView.DisableContainerBG = YES;
 
     // Add some custom content to the alert view
     [alertView setContainerView:[self createDemoView]];
