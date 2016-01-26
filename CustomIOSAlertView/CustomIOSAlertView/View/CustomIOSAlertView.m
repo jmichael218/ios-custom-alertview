@@ -47,6 +47,9 @@ CGFloat buttonSpacerHeight = 0;
         useMotionEffects = false;
         buttonTitles = @[@"Close"];
         
+        // Disable buttonTitles
+        buttonTitles = [NSArray new];
+        
         [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
 
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
